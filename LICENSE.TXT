@@ -2,3 +2,5 @@
 但商用不允许。
 just for my first usage of git
 this is first of my git used SCM
+which is used mainly first good better
+???
