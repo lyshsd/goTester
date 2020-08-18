@@ -1,3 +1,4 @@
 可免费用于学习，
 但商用不允许。
 just for my first usage of git
+this is first of my git used SCM
