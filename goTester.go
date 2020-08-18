@@ -64,28 +64,6 @@ func main() {
 	
 }
 
-func mainnn() {
-	if !parseCommandLine(){
-		return
-	}
-	h := new(Host)
-	h.init(hostName, beginUserID, endUserID,wsAddr)
-	go h.run() //消息总线
-	h.createPeersOnly() //创建用户
-	h.actAllPeers()
-	quit:=make(chan os.Signal)
-	signal.Notify(quit,syscall.SIGINT,syscall.SIGTERM)
-	<-quit
-	
-	fmt.Println("shutting down....")
-	h.deactAllPeers()	
-	
-
-	time.Sleep(1*time.Second)
-	
-	
-}
-
 func printNextID(h *Host){
 	for {
 		if ID:=h.nextPeerID();ID!=-1 {
