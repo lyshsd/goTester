@@ -29,8 +29,6 @@ var (
 	space   = []byte{' '}
 	counter=0
 	
-
-	
 )
 
 var (
@@ -40,15 +38,11 @@ var (
 	processPeriod=10*time.Second
 	//起始和结束userID
     beginUserID=1
-	endUserID=6000
+	endUserID=5000
 	wsAddr="ws://112.74.99.240:8080/ws"
 	//wsAddr="ws://127.0.0.1:8080/ws"
-	hostName="罗勇胜"
+	hostName="lyshsd"
 )
-
-
-
-
 
 
 func main() {
@@ -66,9 +60,7 @@ func main() {
 	fmt.Println("shutting down....")
 	h.deactAllPeers()	
 
-
 	time.Sleep(1*time.Second)
-	
 	
 }
 
